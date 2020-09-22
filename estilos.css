@@ -25,13 +25,13 @@ body{
 }
 .pintadaverde h1{
     position: absolute;
-    top: 30%;
-    left: 1%;
+    top: 35%;
+    left: 10%;
     transform: translate(-50% ,-50%);
     font-family: 'Permanent Marker', cursive;
-    font-size: 70px;
+    font-size: 50px;
     color: white;
-    -webkit-transform: rotate(-2deg);
+    -webkit-transform: rotate(-1deg);
 }
 
 .pintadablanca{
@@ -45,7 +45,7 @@ body{
 .pintadablanca h2{
     position: absolute;
     top: -5%;
-    left: 10%;
+    left: 5%;
     transform: translate(-50% ,-50%);
     font-family: 'Abril Fatface', cursive;
     font-size: 40px;
@@ -67,6 +67,7 @@ body{
     position: absolute;
     bottom: 9px;
     left: 184px; 
+    border: solid 10px white;
 }
 .imagenes1 .malvaviscos{
     border: solid 10px white;
@@ -106,104 +107,82 @@ button a:hover{
     background: rgb(241, 234, 234);
     background-image: url("https://i.gifer.com/6ob.gif");
     display: grid;
-    grid-template-columns: repeat(2 ,1fr);
+    grid-template-columns: repeat(1 ,1fr);
     grid-template-rows: repeat(3 ,1fr);
 }
 .pagina2 div{
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
-.imagenes2{
-    grid-row: 1/4;
-    position: relative;
-}
-.imagenes2 .fotofiesta{
-    border: solid 15px #7ed957;
-    position: absolute;
-    top: 70px;
-    left: 75px;
-}
-.imagenes2 .fotosamigos{
-    border: solid 15px #ffa0b4;
-    position: absolute;
-    top: 310px;
-    right: 9px;
-}
-.pintadarosada{
+.area1a{
     grid-row: 1/2;
     position: relative;
 }
-.pintadarosada h3{
+.imagenIzquierdoSuperior{
+    border: solid 15px #7ed957;
+    position: absolute;
+    top: 70px;
+    left: 30px;
+}
+
+.pintadarosadaDerechoSuperior h3{
     font-family: 'Permanent Marker', cursive;
     font-size: 30px;
     color: white;
     position: absolute;
-    top: 35%;
-    left: 29%;
+    top: 40%;
+    right: 10%;
 }
-.pintadarosada img{
+.pintadarosadaDerechoSuperior img{
     position: absolute;
     right: -230px;
     top: 50px;
 }
-
-.cajaregalo{
+.area2a{
     grid-row: 2/3;
-    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
-.cajaregalo button{
-    width: 150px;
-    height: 150px;
-    border: none;
-    background: none;
+.imagenCentral{
+    border: solid 15px #ffa0b4;
+}
+
+.area3a{  
+    grid-row: 3/4;
     position: relative;
-    text-align: center;
-}
-.cajaregalo a{
-    text-decoration: none;
-    position: absolute;
-    top: 81%;
-    left: 40%;
 }
 
-.cajaregalo a .caja{
+.pintadarosadaIzquierdoInferior h3{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 35px;
+    color: white;
     position: absolute;
-    top: -301%;
-    left: -160%;
+    top: 12%;
+    left: 2%;
 }
-.cajaregalo .pintadoVerde{
+.pintadarosadaIzquierdoInferior img{
     position: absolute;
-    top: 83%;
-    left: 7%;
+    top: 0%;
+    left: -10%;
 }
-.cajaregalo :hover{
-    width: 530;
-    height: 330;
-    background-image: url("cajitaregaloblink.png");
+.imagenDerechoInferior{
+    border: solid 15px #7ed957;
+    position: absolute;
+    bottom: 15%;
+    right: 1%;
 }
-
-.deseos{  
-    grid-row: 3/4;  
-}
-.deseos p{
-    color: #7ed957;
-    font-size: 30px;
-    font-family: 'Abril Fatface', cursive;
-    text-align: center;
-}
-/*alejandra*/
 .pagina3{
     width: 100%;
     height: 100vh;
     background: #7ed957;
     background-image: url("https://i.gifer.com/6ob.gif");
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(1 ,1fr);
+    grid-template-rows: repeat(3 ,1fr);
 }
 .pagina3 div{
-    position: relative;
+    display: flex;
 }
 .pagina3 h4{
     font-family: 'Permanent Marker', cursive;
@@ -211,708 +190,51 @@ button a:hover{
     color: white;
     position: absolute;
 }
-.area{
-    grid-column: 1/2;
-}
-.area .alejandra{
-    border-radius: 50%;
-    border: #ffa0b4 solid 15px;
-    position: absolute;
-    top: 5%;
-    left: 28%;
-}
-.area .imagenNombreAlejandra{
-    border: none;
-    position: absolute;
-    top: 330px;
-    left: 4%;
-}
-.area .nombreAlejandra{
-    top: 40%;
-    left: 19%;
-}
-.comentario{
-    grid-column: 2/3;
-    position: relative;
-}   
-.comentarioAlejandra{
-    position: absolute;
-    /*font-family: 'Abril Fatface', cursive;*/
-    font-size: 22px;
-    color: #ffa0b4;
-    top: 30%;
-    left: 15%;
-}
-.imagenComentarioAlejandra{
-    position: absolute; 
-    top: 0%;
-    right: -16%;
-}
-.area2{
-    grid-column: 3/4;
-    position: relative;
-}
-.fotoGrupoAlejandra{
-    border:solid #ffa0b4 8px ;
+.imagenDerechoSuperior{
+    border: solid 15px rgb(241, 234, 234);
     position: absolute;
     top: 20%;
     right: 2%;
 }
 
-/*kevin*/
-.pagina4{
-    width: 100%;
-    height: 100vh;
-    background: #7ed957;
-    background-image: url("https://i.gifer.com/6ob.gif");
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr;
-}
-.pagina4 div{
-    position: relative;
-}
-.pagina4 h4{
+.pintadarosadaIzquierdoSuperior h3{
     font-family: 'Permanent Marker', cursive;
     font-size: 30px;
     color: white;
-    position: absolute;
-}
-.area{
-    grid-column: 1/2;
-    position: relative;
-}
-.fotoGrupoKevin{
-    border:solid #ffa0b4 8px ;
-    position: absolute;
-    top: 33%;
-    right: -46%;
-}
-.comentario{
-    grid-column: 2/3;
-    position: relative;
-}   
-.comentarioKevin{
-    position: absolute;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 35px;
-    color: #ffa0b4;
-    top: 34%;
-    left: 36%;
-}
-.imagenComentarioKevin{
-    position: absolute; 
-    top: 15%;
-    right: -7%;
-}
-
-.area2{
-    grid-column: 3/4;
-}
-.area2 .kevin{
-    border-radius: 50%;
-    border: #ffa0b4 solid 15px;
-    position: absolute;
-    top: 18%;
-    left: 28%;
-}
-.area2 .imagenNombreKevin{
-    border: none;
-    position: absolute;
-    top: 400px;
-    left: 10%;
-}
-.area2 .nombreKevin{
-    top: 49%;
-    left: 29%;
-}
-
-/*alan*/
-.pagina5{
-    width: 100%;
-    height: 100vh;
-    background: #7ed957;
-    background-image: url("https://i.gifer.com/6ob.gif");
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr;
-}
-.pagina5 div{
-    position: relative;
-}
-.pagina5 h4{
-    font-family: 'Permanent Marker', cursive;
-    font-size: 28px;
-    color: white;
-    position: absolute;
-}
-.area{
-    grid-column: 1/2;
-}
-.area .alan{
-    border-radius: 50%;
-    border: #ffa0b4 solid 15px;
-    position: absolute;
-    top: 15%;
-    left: 28%;
-}
-.area .imagenNombreAlan{
-    border: none;
-    position: absolute;
-    top: 400px;
-    left: 4%;
-}
-.area .nombreAlan{
-    top: 50%;
-    left: 32%;
-}
-.comentario{
-    grid-column: 2/3;
-    position: relative;
-}   
-.comentarioAlan{
-    position: absolute;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 35px;
-    color: #ffa0b4;
-    top: 34%;
-    left: 19%;
-}
-.imagenComentarioAlan{
-    position: absolute; 
-    top: 8%;
-    right: 5%;
-}
-.area2{
-    grid-column: 3/4;
-    position: relative;
-}
-.fotoGrupoAlan{
-    border:solid #ffa0b4 8px ;
     position: absolute;
     top: 20%;
-    right: 5%;
+    left: 3%;
 }
 
-/*Lu*/
-.pagina6{
-    width: 100%;
-    height: 100vh;
-    background: #7ed957;
-    background-image: url("https://i.gifer.com/6ob.gif");
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr;
-}
-.pagina6 div{
-    position: relative;
-}
-.pagina6 h4{
-    font-family: 'Permanent Marker', cursive;
-    font-size: 30px;
-    color: white;
+.pintadarosadaIzquierdoSuperior img{
     position: absolute;
+    left: -15%;
+    bottom: 10%;
 }
-.area{
-    grid-column: 1/2;
-    position: relative;
-}
-.fotoGrupoLu{
-    border:solid #ffa0b4 8px ;
+.pintadarosadaDerechoInferior img{
     position: absolute;
-    top: 33%;
-    right: -18%;
-}
-.comentario{
-    grid-column: 2/3;
-    position: relative;
-}   
-.comentarioLu{
-    position: absolute;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 35px;
-    color: #ffa0b4;
-    top: 40%;
-    left: 16%;;
-}
-.imagenComentarioLu{
-    position: absolute; 
-    top: 15%;
-    right: -7%;
-}
-
-.area2{
-    grid-column: 3/4;
-}
-.area2 .lu{
-    border-radius: 50%;
-    border: #ffa0b4 solid 15px;
-    position: absolute;
-    top: 18%;
-    left: 28%;
-}
-.area2 .imagenNombreLu{
-    border: none;
-    position: absolute;
-    top: 400px;
-    left: 4%;
-}
-.area2 .nombreLu{
-    top: 52%;
-    left: 21%;
-}
-
-/*pablo tarqui*/
-.pagina7{
-    width: 100%;
-    height: 100vh;
-    background: #7ed957;
-    background-image: url("https://i.gifer.com/6ob.gif");
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr;
-}
-.pagina7 div{
-    position: relative;
-}
-.pagina7 h4{
-    font-family: 'Permanent Marker', cursive;
-    font-size: 28px;
-    color: white;
-    position: absolute;
-}
-.area{
-    grid-column: 1/2;
-}
-.area .pablo{
-    border-radius: 50%;
-    border: #ffa0b4 solid 15px;
-    position: absolute;
-    top: 15%;
-    left: 28%;
-}
-.area .imagenNombrePablo{
-    border: none;
-    position: absolute;
-    top: 400px;
-    left: 16%;
-}
-.area .nombrePablo{
-    top: 50%;
-    left: 29%;
-}
-.comentario{
-    grid-column: 2/3;
-    position: relative;
-}   
-.comentarioPablo{
-    position: absolute;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 35px;
-    color: #ffa0b4;
-    top: 34%;
-    left: 19%;
-    right: 134px;
-}
-.imagenComentarioPablo{
-    position: absolute; 
-    top: 23%;
-    right: 22%;
-}
-.area2{
-    grid-column: 3/4;
-    position: relative;
-}
-.fotoGrupoPablo{
-    border:solid #ffa0b4 8px ;
-    position: absolute;
-    top: 20%;
-    right: 5%;
-}
-
-/*Sergio Torrico*/
-.pagina8{
-    width: 100%;
-    height: 100vh;
-    background: #7ed957;
-    background-image: url("https://i.gifer.com/6ob.gif");
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr;
-}
-.pagina8 div{
-    position: relative;
-}
-.pagina8 h4{
-    font-family: 'Permanent Marker', cursive;
-    font-size: 30px;
-    color: white;
-    position: absolute;
-}
-.area{
-    grid-column: 1/2;
-    position: relative;
-}
-.fotoGrupoSergio{
-    border:solid #ffa0b4 8px ;
-    position: absolute;
-    top: 17%;
-    right: -18%;
-}
-.comentario{
-    grid-column: 2/3;
-    position: relative;
-}   
-.comentarioSergio{
-    position: absolute;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 35px;
-    color: #ffa0b4;
-    top: 25%;
-    left: 16%;;
-}
-.imagenComentarioSergio{
-    position: absolute; 
-    top: 4%;
     right: -13%;
+    top: 0%;
 }
 
-.area2{
-    grid-column: 3/4;
-}
-.area2 .sergio{
-    border-radius: 50%;
-    border: #ffa0b4 solid 15px;
-    position: absolute;
-    top: 13%;
-    left: 28%;
-}
-.area2 .imagenNombreSergio{
-    border: none;
-    position: absolute;
-    top: 379px;
-    left: 10%;
-}
-.area2 .nombreSergio{
-    top: 48%;
-    left: 25%;
-}
-
-/*Brenda Torrico*/
-.pagina9{
-    width: 100%;
-    height: 100vh;
-    background: #7ed957;
-    background-image: url("https://i.gifer.com/6ob.gif");
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr;
-}
-.pagina9 div{
-    position: relative;
-}
-.pagina9 h4{
+.pintadarosadaDerechoInferior h3{
     font-family: 'Permanent Marker', cursive;
-    font-size: 28px;
+    font-size: 30px;
     color: white;
-    position: absolute;
-}
-.area{
-    grid-column: 1/2;
-}
-.area .brenda{
-    border-radius: 50%;
-    border: #ffa0b4 solid 15px;
     position: absolute;
     top: 15%;
-    left: 28%;
-}
-.area .imagenNombreBrenda{
-    border: none;
-    position: absolute;
-    top: 400px;
-    left: 10%;
-}
-.area .nombreBrenda{
-    top: 50%;
-    left: 26%;
-}
-.comentario{
-    grid-column: 2/3;
-    position: relative;
-}   
-.comentarioBrenda{
-    position: absolute;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 26px;
-    color: #ffa0b4;
-    top: 27%;
-    left: 29%;
-}
-.imagenComentarioBrenda{
-    position: absolute; 
-    top: -2%;
-    right: -32%;
-}
-/*
-.area2{
-    grid-column: 3/4;
-    position: relative;
-}
-.fotoGrupoBrenda{
-    border:solid #ffa0b4 8px ;
-    position: absolute;
-    top: 20%;
-    right: 5%;
-}*/
-
-/*Vico*/
-.pagina10{
-    width: 100%;
-    height: 100vh;
-    background: #7ed957;
-    background-image: url("https://i.gifer.com/6ob.gif");
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr;
-}
-.pagina10 div{
-    position: relative;
-}
-.pagina10 h4{
-    font-family: 'Permanent Marker', cursive;
-    font-size: 30px;
-    color: white;
-    position: absolute;
-}
-.area{
-    grid-column: 1/2;
-    position: relative;
-}
-.fotoGrupoVico{
-    border:solid #ffa0b4 8px ;
-    position: absolute;
-    top: 17%;
-    right: -18%;
-}
-.comentario{
-    grid-column: 2/3;
-    position: relative;
-}   
-.comentarioVico{
-    position: absolute;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 35px;
-    color: #ffa0b4;
-    top: 35%;
-    left: 23%;
-}
-.imagenComentarioVico{
-    position: absolute; 
-    top: 4%;
-    right: -13%;
+    right: 10%;
 }
 
-.area2{
-    grid-column: 3/4;
-}
-.area2 .vico{
-    border-radius: 50%;
-    border: #ffa0b4 solid 15px;
+.imagenIzquierdoInferior{
+    border: solid 15px rgb(241, 234, 234);
     position: absolute;
-    top: 13%;
-    left: 28%;
-}
-.area2 .imagenNombreVico{
-    border: none;
-    position: absolute;
-    top: 379px;
-    left: 8%;
-}
-.area2 .nombreVico{
-    top: 48%;
-    left: 20%;
+    bottom: 20%;
+    left: 2%; 
 }
 
-/*Estefany Rua*/
-.pagina11{
-    width: 100%;
-    height: 100vh;
-    background: #7ed957;
-    background-image: url("https://i.gifer.com/6ob.gif");
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr;
-}
-.pagina11 div{
-    position: relative;
-}
-.pagina11 h4{
-    font-family: 'Permanent Marker', cursive;
-    font-size: 28px;
-    color: white;
+.videoDerechaInferior{
     position: absolute;
-}
-.area{
-    grid-column: 1/2;
-}
-.area .chiki{
-    border-radius: 50%;
-    border: #ffa0b4 solid 15px;
-    position: absolute;
-    top: 13%;
-    left: 24%;
-}
-.area .imagenNombreChiki{
-    border: none;
-    position: absolute;
-    top: 400px;
-    left: 10%;
-}
-.area .nombreChiki{
-    top: 48%;
-    left: 26%;
-}
-.comentario{
-    grid-column: 2/3;
-    position: relative;
-}   
-.comentarioChiki{
-    position: absolute;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 30px;
-    color: #ffa0b4;
-    top: 30%;
-    left: 10%;
-    right: 90px;
-}
-.imagenComentarioChiki{
-    position: absolute; 
-    top: 6%;
     right: 0%;
+    bottom: 5%;
 }
-.area2{
-    grid-column: 3/4;
-    position: relative;
-}
-.fotoGrupoChiki{
-    border:solid #ffa0b4 8px ;
-    position: absolute;
-    top: 20%;
-    right: 5%;
-}
-
-/*Yo*/
-.pagina12{
-    width: 100%;
-    height: 100vh;
-    background: #7ed957;
-    background-image: url("https://i.gifer.com/6ob.gif");
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 3fr 1fr;
-}
-.pagina12 div{
-    position: relative;
-}
-.pagina12 h4{
-    font-family: 'Permanent Marker', cursive;
-    font-size: 30px;
-    color: white;
-    position: absolute;
-}
-.area{
-    grid-column: 1/2;
-    position: relative;
-}
-.fotoGrupoCamilo{
-    border:solid #ffa0b4 8px ;
-    position: absolute;
-    top: 7%;
-    right: -17%;
-}
-.fotoFlorDiaEspecial{
-    border: solid #ffa0b4 8px;
-    position: absolute;
-    top: 54%;
-    right: -10%;
-}
-.fotoFlorDiaEspecial:hover{
-    border: solid white 8px;
-} 
-.comentario{
-    grid-column: 2/3;
-    position: relative;
-}   
-.comentarioCamilo{
-    position: absolute;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 25px;
-    color: #ffa0b4;
-    top: 8%;
-    left: 18%;
-}
-.imagenComentarioCamilo{
-    position: absolute; 
-    top: -23%;
-    right: -13%;
-}
-
-.dedicadas{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    font-family: 'Permanent Marker', cursive;
-    text-align: center;
-    position: relative;
-}
-.dedicadas img{
-    position: absolute;
-    top: -5%;
-    left: 43%;
-}
-.dedicadas h5{
-    font-size: 22px;
-    position: absolute;
-    top: -50%;
-    left: 30%;
-}
-.dedicadas h5 span{
-    font-size: 12px;
-}
-.dedicadas ul{
-    text-align: center;
-    color: white;
-    position: absolute;
-    top: 10%;
-    left: 43%;
-}
-.dedicadas ul :hover{
-    color: tomato;
-}
-.dedicadas a{
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-}
-
-.area2{
-    grid-column: 3/4;
-}
-.area2 .camilo{
-    border-radius: 50%;
-    border: #ffa0b4 solid 15px;
-    position: absolute;
-    top: 4%;
-    left: 28%;
-}
-.area2 .imagenNombreCamilo{
-    border: none;
-    position: absolute;
-    top: 300px;
-    left: 8%;
-}
-.area2 .nombreCamilo{
-    top: 47%;
-    left: 22%;
-}
-
